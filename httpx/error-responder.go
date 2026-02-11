@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/phy0hk/go-utils/types"
+	"github.com/phy0hk/go_utils/types"
 )
 
 func ErrorResponder(w http.ResponseWriter, r *http.Request, error_message string, responseCode int) {
