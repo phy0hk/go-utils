@@ -1,11 +1,14 @@
 package types
 
-type ResponseMessage struct {
-	Status  ResponseStatus
-	Message string `json:"message" example:"Message"`
-}
+type ResponseType string
 
-type ResponseStatus struct {
-	Code    int    `json:"code" example:"Status Code"`
-	Message string `json:"message" example:"Status Name"`
+const (
+	Error   ResponseType = "error"
+	Success ResponseType = "success"
+	Warning ResponseType = "warning"
+)
+
+type ResponseMessage struct {
+	Type    ResponseType `json:"type" example:"error"`
+	Message string       `json:"message" example:"Message"`
 }
