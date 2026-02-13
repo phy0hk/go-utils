@@ -1,4 +1,4 @@
-package types
+package httpx
 
 type ResponseType string
 

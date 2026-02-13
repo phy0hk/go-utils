@@ -1,4 +1,4 @@
-package types
+package text
 
 type Color string
 
